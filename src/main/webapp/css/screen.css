@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+}
+
+.main-view {
+  margin-top: 80px;
+}
+
+ul.left-menu{
+	list-style-type: none;
+	background-color: #3399CC;	
+}
+
+ul.left-menu li{
+	background-color: #3399CC;
+}
+
+
+
+ul.left-menu li a{
+	color: #fff;
+	padding : 5px 10px;	
+}
