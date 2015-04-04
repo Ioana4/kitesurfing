@@ -21,3 +21,17 @@ ul.left-menu li a{
 	color: #fff;
 	padding : 5px 10px;	
 }
+
+.nav .nav>li>a {
+	padding-left: 30px;
+}
+
+
+.product .image img{
+	width: 150px;
+	height: 150px;
+}
+
+.product .price{
+	font-weight: bold;
+}
