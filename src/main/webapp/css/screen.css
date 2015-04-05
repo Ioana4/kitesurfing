@@ -22,7 +22,14 @@ ul.left-menu li a {
 	padding: 5px 10px;
 }
 
+.home-section img{
+	padding-top:10px;
+	height:300px;
+	width: 350px;
+}
 
+
+/**carousel*/
 .carousel-control{
 	position: absolute;
 	-webkit-border-radius: 23px;
