@@ -23,12 +23,15 @@ a, a:hover, a:focus, a:active, a.active {
   outline: 0;
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #cccccc;
+/**
+.carousel-caption .btn-info:hover,
+.carousel-caption .btn-info:focus,
+.carousel-caption .btn-info:active,
+.carousel-caption .btn-info.active {
+    background-color: transparent;
+    color: #46b8da;
 }
+*/
 
 /**home*/
 body {
@@ -120,6 +123,19 @@ ul.left-menu li a {
   right: 25px;
 }
 */
+
+/** lessons*/
+
+.lesson-img img{
+	width: 100%;
+	height: 270px;	
+}
+
+.faq{
+	font-size:270px;
+}
+
+
 
 /** store */
 .nav .nav>li>a {
