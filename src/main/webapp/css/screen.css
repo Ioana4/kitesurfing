@@ -125,3 +125,11 @@ ul.left-menu li a {
 	float: right;
 	text-align: right;
 }
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
