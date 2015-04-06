@@ -1,3 +1,35 @@
+/**
+nav bar
+*/
+.navbar-brand {
+	background: url('../images/sigla.png') no-repeat;
+	background-size: 150px 50px;
+	width: 150px;
+	height: 50px;
+	margin-top: 5px;
+}	
+
+.fa-youtube-square {
+  color: rgb(195, 51, 51);
+}
+
+
+.footer{
+	margin-top:15px;
+	height: 100%;
+}
+
+a, a:hover, a:focus, a:active, a.active {
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #cccccc;
+}
+
 /**home*/
 body {
 	background-color: #fff;
@@ -22,15 +54,24 @@ ul.left-menu li a {
 	padding: 5px 10px;
 }
 
-.home-section img{
-	padding-top:10px;
-	height:300px;
+.home-section img {
+	padding-top: 10px;
+	height: 300px;
 	width: 350px;
 }
 
-
 /**carousel*/
-.carousel-control{
+.carousel .item {
+	width: 100%; /*slider width*/
+	
+}
+
+.carousel .item img {
+	width: 100%; /*img width*/
+	height: auto;
+}
+
+.carousel-control {
 	position: absolute;
 	-webkit-border-radius: 23px;
 	-moz-border-radius: 23px;
@@ -48,15 +89,13 @@ ul.left-menu li a {
 	background: #AAD6E5;
 }
 
-.carousel-control.left{
-	left:15px;
+.carousel-control.left {
+	left: 15px;
 }
 
-.carousel-control.right{
-	right:15px;
+.carousel-control.right {
+	right: 15px;
 }
-
-
 
 /**carousel 
 .carousel-control span{
@@ -126,10 +165,3 @@ ul.left-menu li a {
 	text-align: right;
 }
 
-.carousel .item {
-    width: 100%; /*slider width*/
-    max-height: 600px; /*slider height*/
-}
-.carousel .item img {
-    width: 100%; /*img width*/
-}
