@@ -75,7 +75,8 @@ ul.left-menu li a {
 
 .carousel .item img {
 	width: 100%; /*img width*/
-	height: 640px;
+	height: 620px;
+	background-position: center top;
 }
 
 .carousel-control {
