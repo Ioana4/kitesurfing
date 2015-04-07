@@ -23,15 +23,15 @@ a, a:hover, a:focus, a:active, a.active {
   outline: 0;
 }
 
-/**
+
 .carousel-caption .btn-info:hover,
 .carousel-caption .btn-info:focus,
 .carousel-caption .btn-info:active,
 .carousel-caption .btn-info.active {
     background-color: transparent;
-    color: #46b8da;
+    color: #000;
 }
-*/
+
 
 /**home*/
 body {
@@ -73,6 +73,13 @@ ul.left-menu li a {
 	height:100%;
 }
 
+
+.carousel-caption{
+	font-style: italic;
+	text-shadow: 2px 1px #C0C0C0;
+	font-size : 20px;
+}
+
 .carousel .item img {
 	width: 100%; /*img width*/
 	height: 620px;
@@ -105,29 +112,7 @@ ul.left-menu li a {
 	right: 15px;
 }
 
-/**carousel 
-.carousel-control span{
-  position: absolute;
-}
 
-.carousel-control{
-	top:50%;
-}
-
-.carousel-control .carousel-control-left {
-  background: url('../images/controls/go_back.png') no-repeat;
-  width: 24px;
-  height: 24px;
-  left: 25px;
-}
-
-.carousel-control .carousel-control-right {
-  background: url('../images/controls/go_forward.png') no-repeat;
-  width: 24px;
-  height: 24px;
-  right: 25px;
-}
-*/
 
 /** lessons*/
 
