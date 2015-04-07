@@ -12,13 +12,7 @@
         </div>
         <div class="navbar-collapse collapse navmenu">
             <ul class="nav navbar-nav navbar-left">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#lessons">Lessons</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#travel">Travel</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li ng-repeat="item in menu" ng-class="getActive(item)"><a href="{{item.link}}" ng-click="setActive(item)">{{item.label}}</a></li>
             </ul>
             
             <div class="navbar-text pull-right">
