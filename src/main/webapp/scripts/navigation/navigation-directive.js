@@ -15,6 +15,8 @@ angular.module('app')
                    {label: 'CONTACT', link: '#contact'}
                ];
 
+               $scope.activeElement = $scope.menu[0];
+
                $scope.setActive = function(element){
                    $scope.activeElement = element;
                };
