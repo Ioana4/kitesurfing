@@ -5,7 +5,7 @@ angular.module('app')
            replace: false,
            templateUrl: 'views/navigation/navigation-directive.html',
            controller: function () {
-
+        	   	
            }
        }
     });
