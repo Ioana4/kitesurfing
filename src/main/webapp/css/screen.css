@@ -3,10 +3,10 @@ nav bar
 */
 .navbar-brand {
 	background: url('../images/sigla.png') no-repeat;
-	background-size: 150px 50px;
-	width: 150px;
-	height: 50px;
-	margin-top: 5px;
+	background-size: 130px 37px;
+	width: 130px;
+	height: 37px;
+	margin-top: 7px;
 }	
 
 .fa-youtube-square {
