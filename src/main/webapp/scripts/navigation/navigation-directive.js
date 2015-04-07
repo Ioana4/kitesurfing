@@ -8,10 +8,11 @@ angular.module('app')
 
                $scope.menu = [
                    {label: 'HOME', link: '#home'},
+                   {label: 'ABOUT', link: 'about'},
                    {label: 'LESSONS', link: '#lessons'},
-                   {label: 'STORE', link: '#store'},
                    {label: 'GALLERY', link: '#gallery'},
-                   {label: 'TRIPS', link: '#trips'},
+                   {label: 'STORE', link: '#store'},
+                   {label: 'TRAVEL', link: '#travel'},
                    {label: 'CONTACT', link: '#contact'}
                ];
 

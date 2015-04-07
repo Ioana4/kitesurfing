@@ -69,9 +69,13 @@ ul.left-menu li a {
 	
 }
 
+#menuCarousel{
+	height:100%;
+}
+
 .carousel .item img {
 	width: 100%; /*img width*/
-	height: auto;
+	height: 640px;
 }
 
 .carousel-control {
