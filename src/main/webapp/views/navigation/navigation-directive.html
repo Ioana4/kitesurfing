@@ -1,28 +1,31 @@
-<div id = "custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#"></a>
+<div class="container">
+	<div id="custom-bootstrap-menu"
+		class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"></a>
 
-            <div type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navmenu">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-        </div>
-        <div class="navbar-collapse collapse navmenu">
-            <ul class="nav navbar-nav navbar-left">
-                <li ng-repeat="item in menu" ng-class="getActive(item)"><a href="{{item.link}}" ng-click="setActive(item)">{{item.label}}</a></li>
-            </ul>
-            
-            <div class="navbar-text pull-right">
-            	<a href="http://www.facebook.com/dean.kitesurfing?fref=ts" target="_blank">
-            		<i class="fa fa-facebook-square fa-2x"></i>
-            	</a>
-            	<a href="http://www.youtube.com/watch?v=3a9Oqhli_gI" target="_blank">
-            		<i class="fa fa-youtube-square fa-2x"></i>
-            	</a>
-            </div> 
-        </div>
-    </div>
+				<div type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navmenu">
+					<span class="sr-only">Toggle Navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</div>
+			</div>
+			<div class="navbar-collapse collapse navmenu">
+				<ul class="nav navbar-nav navbar-left">
+					<li ng-repeat="item in menu" ng-class="getActive(item)"><a
+						href="{{item.link}}" ng-click="setActive(item)">{{item.label}}</a></li>
+				</ul>
+
+				<div class="navbar-text pull-right">
+					<a href="http://www.facebook.com/dean.kitesurfing?fref=ts"
+						target="_blank"> <i class="fa fa-facebook-square fa-2x"></i>
+					</a> <a href="http://www.youtube.com/watch?v=3a9Oqhli_gI"
+						target="_blank"> <i class="fa fa-youtube-square fa-2x"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

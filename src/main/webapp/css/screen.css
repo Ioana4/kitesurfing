@@ -29,13 +29,20 @@ a,a:hover,a:focus,a:active,a.active {
 }
 
 /**home*/
+html{
+	height:100%;
+}
+
+
 body {
 	background-color: #fff;
-	margin-bottom: 80px;
+	/**margin-bottom: 80px; */
+	height:100%;
 }
 
 .main-view {
 	margin-top: 60px;
+	height:100%;
 }
 
 ul.left-menu {
@@ -57,6 +64,8 @@ ul.left-menu li a {
 	height: 300px;
 	width: 350px;
 }
+
+
 
 .home-container .caption {
 	text-align: center;
@@ -88,13 +97,20 @@ ul.left-menu li a {
 
 /*
 *carousel*/
-.carousel .item {
-	width: 100%; /*slider width*/
+.full-height{
+	height:100%;	
 }
 
-#menuCarousel {
+
+.carousel-container{
+	height:86%;
+}
+
+.carousel .item {
+	width: 100%; /*slider width*/
 	height: 100%;
 }
+
 
 .carousel-caption {
 	font-style: italic;
@@ -104,8 +120,9 @@ ul.left-menu li a {
 
 .carousel .item img {
 	width: 100%; /*img width*/
-	height: 620px;
+	height: 100%;
 	background-position: center top;
+	
 }
 
 .carousel-control {
@@ -186,4 +203,9 @@ ul.left-menu li a {
 .next {
 	float: right;
 	text-align: right;
+}
+
+/** general */
+.col-padding{
+	  padding: 4px 4px;
 }
