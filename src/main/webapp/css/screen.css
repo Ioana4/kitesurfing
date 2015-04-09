@@ -132,6 +132,13 @@ ul.left-menu li a {
     }
 }
 
+/*XS*/
+@media screen and (max-width: 767px) {
+    .carousel .item img {
+        height: 250px;
+    }
+}
+
 .carousel-control {
 	position: absolute;
 	-webkit-border-radius: 23px;
