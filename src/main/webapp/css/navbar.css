@@ -30,16 +30,16 @@
     background-color: rgba(26, 47, 112, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #1a2f70;
+    color: #ffffff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
     background-color: #1a2f70;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #1a2f70;
+    background-color: #ffffff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #1a2f70;
+    background-color: #ffffff;
 }
