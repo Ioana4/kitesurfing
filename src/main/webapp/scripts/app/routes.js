@@ -15,7 +15,7 @@ angular
                   templateUrl: 'views/store/store.html'
             })
             .when('/gallery', {
-                  templateUrl: 'views/gallery/gallery.html'
+                  templateUrl: 'views/gallery/gallery2.html'
             })
             .when('/travel', {
                   templateUrl: 'views/travel/travel.html'

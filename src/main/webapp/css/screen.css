@@ -220,29 +220,39 @@ ul.left-menu li a {
 }
 
 /** gallery */
-.gallery img {
-	filter: gray; /* IE6-9 */
-	-webkit-filter: grayscale(1);
-	/* Google Chrome, Safari 6+ & Opera 15+ */
-	-webkit-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
-	margin-bottom: 20px;
+.gallery_container{
+	
 }
 
-.gallery img:hover {
-	filter: none; /* IE6-9 */
-	-webkit-filter: grayscale(0);
-	/* Google Chrome, Safari 6+ & Opera 15+ */
+.gallery_slider{
+	heigth: 100%;
+	overflow: hidden;
+	top: 0px;	
 }
 
-.controls {
-	width: 50px;
-	display: block;
-	font-size: 11px;
-	padding-top: 8px;
-	font-weight: bold;
+.gallery_nav{
+	margin-top : 10px;
 }
+
+
+.gallery_img img{
+	height:480px;
+	width: 100%;
+}
+
+.gallery_thumb{
+	float: left;
+	margin-left : 5px;
+}
+
+.gallery_thumb img{
+	height: 80px;
+	width: 120px;	
+}
+
+
+
+
 
 .next {
 	float: right;
