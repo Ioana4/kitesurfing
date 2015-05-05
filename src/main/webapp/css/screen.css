@@ -76,6 +76,12 @@ ul.left-menu li a {
 	margin-bottom: 40px;
 }
 
+.home-container .caption {
+	text-align: center;
+	color: #000;
+	margin-bottom: 40px;
+}
+
 .home-content {
 	background: transparent;
 	padding: 0;

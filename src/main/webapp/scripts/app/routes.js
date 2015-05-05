@@ -5,6 +5,9 @@ angular
             .when('/', {
                   templateUrl: 'views/home/home.html'
             })
+             .when('/home', {
+                  templateUrl: 'views/home/home.html'
+            })
             .when('/about', {
                   templateUrl: 'views/about/about.html'
             })
@@ -15,7 +18,7 @@ angular
                   templateUrl: 'views/store/store.html'
             })
             .when('/gallery', {
-                  templateUrl: 'views/gallery/gallery2.html'
+                  templateUrl: 'views/gallery/video.html'
             })
             .when('/travel', {
                   templateUrl: 'views/travel/travel.html'
