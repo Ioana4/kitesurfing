@@ -18,6 +18,9 @@ angular
                   templateUrl: 'views/store/store.html'
             })
             .when('/gallery', {
+                  templateUrl: 'views/gallery/gallery2.html'
+            })
+            .when('/video', {
                   templateUrl: 'views/gallery/video.html'
             })
             .when('/travel', {

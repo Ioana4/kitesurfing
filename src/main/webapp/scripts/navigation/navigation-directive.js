@@ -11,6 +11,7 @@ angular.module('app')
                    {label: 'ABOUT', link: '#about'},
                    {label: 'LESSONS', link: '#lessons'},
                    {label: 'GALLERY', link: '#gallery'},
+                   {label: 'VIDEO', link: '#video'},
                    {label: 'STORE', link: '#store'},
                    {label: 'TRAVEL', link: '#travel'},
                    {label: 'CONTACT', link: '#contact'}
