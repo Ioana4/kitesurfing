@@ -257,6 +257,10 @@ ul.left-menu li a {
 }
 
 
+/** video*/
+.video-container .row{
+	margin-bottom: 35px;
+}
 
 
 
