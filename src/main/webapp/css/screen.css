@@ -211,6 +211,20 @@ ul.left-menu li a {
 	font-size: 270px;
 }
 
+.lesson-caption{
+/**	text-align: center; */
+}
+
+.lessons .row{
+	margin-top: 15px;
+}
+
+.lessons-controls{
+/**	text-align: center; */
+}
+
+
+
 /** store */
 .nav .nav>li>a {
 	padding-left: 30px;
@@ -224,6 +238,8 @@ ul.left-menu li a {
 .product .price {
 	font-weight: bold;
 }
+
+
 
 /** gallery */
 .gallery_container{
