@@ -28,5 +28,17 @@ angular
             })
             .when('/contact', {
                   templateUrl: 'views/contact/contact.html'
+            })
+            .when('/module1', {
+                  templateUrl: 'views/lessons/module1.html'
+            })
+             .when('/module2', {
+                  templateUrl: 'views/lessons/module2.html'
+            })
+             .when('/module3', {
+                  templateUrl: 'views/lessons/module3.html'
+            })
+             .when('/module4', {
+                  templateUrl: 'views/lessons/module4.html'
             });           
     }]);
