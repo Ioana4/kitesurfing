@@ -204,6 +204,11 @@ ul.left-menu li a {
 }
 
 /** lessons*/
+.introductionCarousel img{
+	height: initial;
+}
+
+
 .lesson-img{
 	padding-bottom: 4px;
 }
