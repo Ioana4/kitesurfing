@@ -204,7 +204,7 @@ ul.left-menu li a {
 }
 
 /** lessons*/
-.introductionCarousel img{
+#introductionCarousel img{
 	height: 500px;
 }
 
