@@ -104,7 +104,7 @@ ul.left-menu li a {
 	left: 0;
 	margin: 0;
 	top: 0;
-	padding: 230px;
+	padding: 20px;
 	position: absolute;
 	border: 0;
 	border-radius: 0px;
@@ -117,7 +117,8 @@ ul.left-menu li a {
 }
 
 .hover-content {
-	height: 80%;
+	height: 100%;
+	padding-top: 230px;
 }
 
 .home-container .img-container:hover>.hover-panel {
