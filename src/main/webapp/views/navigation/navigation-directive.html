@@ -14,8 +14,14 @@
 			</div>
 			<div class="navbar-collapse collapse navmenu">
 				<ul class="nav navbar-nav navbar-left">
-					<li ng-repeat="item in menu" ng-class="getActive(item)"><a
-						href="{{item.link}}" ng-click="setActive(item)">{{item.label}}</a></li>
+					<li ng-repeat="item in menu" ng-class="getActive(item)" class="dropdown">
+						<a href="{{item.link}}"  data-toggle="dropdown" ng-click="setActive(item)" ng-class="{'dropdown-toggle':item.submenu}">{{item.label}}
+							<span class="caret" ng-if="item.submenu"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu" ng-if="item.submenu"> 
+							<li ng-repeat="submenu in item.submenu"><a href="{{submenu.link}}">{{submenu.label}}</a></li>
+						</ul>
+					</li>
 				</ul>
 
 				<div class="navbar-text pull-right">
