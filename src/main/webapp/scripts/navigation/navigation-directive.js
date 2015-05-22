@@ -11,6 +11,9 @@ angular.module('app')
                    {label: 'ABOUT', link: '#about'},
                    {label: 'LESSONS', link: '#lessons'
                 	   , submenu: [
+                	       
+                	       {label: 'Free taste', link: '#lessons'}
+                	        {label: 'INTRODUCTION', link: '#lessons'}
                 	       {label: 'MODULE1', link: '#module1'}, {label: 'MODULE2', link: '#module2'},  {label: 'MODULE3', link: '#module3'}]},
                    {label: 'GALLERY', link: '#gallery'},
                    {label: 'VIDEO', link: '#video'},
