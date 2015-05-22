@@ -18,7 +18,9 @@ angular.module('app')
                 	       {label: 'MODULE2', link: '#module2'}, 
                 	       {label: 'MODULE3', link: '#module3'},
                 	       {label: 'NEXT LEVEL', link: '#nextLevel'}, 
-                	       {label: 'FAQ', link: '#module4'}]},
+                	       {label: 'FAQ', link: '#module4'}
+                	   ]
+                   },
                    {label: 'GALLERY', link: '#gallery'},
                    {label: 'VIDEO', link: '#video'},
                    {label: 'STORE', link: '#store'},
