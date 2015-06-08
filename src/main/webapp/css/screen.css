@@ -151,11 +151,13 @@ ul.left-menu li a {
 	height: 100%;
 }
 
+/** not used anymore
 .carousel-caption {
 	font-style: italic;
 	text-shadow: 2px 1px #C0C0C0;
 	font-size: 20px;
 }
+*/
 
 .carousel .item img {
 	width: 100%; /*img width*/

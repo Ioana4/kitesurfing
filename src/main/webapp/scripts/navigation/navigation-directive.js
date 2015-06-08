@@ -9,10 +9,9 @@ angular.module('app')
                $scope.menu = [
                    {label: 'HOME', link: '#home'},
                    {label: 'ABOUT', link: '#about'},
-                   {label: 'LESSONS', link: '#lessons'
+                   {label: 'LESSONS'
                 	   , submenu: [
-                	       
-                	       {label: 'Free taste', link: '#freeTaste'} ,
+                	       {label: 'FREE TASTE', link: '#freeTaste'} ,
                 	       {label: 'INTRODUCTION', link: '#lessons'},
                 	       {label: 'MODULE1', link: '#module1'}, 
                 	       {label: 'MODULE2', link: '#module2'}, 
