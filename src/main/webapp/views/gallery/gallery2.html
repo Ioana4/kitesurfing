@@ -88,8 +88,8 @@
 
                     $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
                     $SpacingX: 8,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
-                    $DisplayPieces: 10,                             //[Optional] Number of pieces to display, default value is 1
-                    $ParkingPosition: 360                          //[Optional] The offset position to park thumbnail
+                    $DisplayPieces: 12,                             //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 60                          //[Optional] The offset position to park thumbnail
                 }
             };
 
@@ -99,7 +99,7 @@
             function ScaleSlider() {
                 var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
                 if (parentWidth)
-                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 800), 300));
+                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 1000), 300));
                 else
                     window.setTimeout(ScaleSlider, 30);
             }
@@ -113,8 +113,8 @@
     </script>
     <!-- Jssor Slider Begin -->
     <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-        height: 456px; background: #191919; overflow: hidden;  margin: 0px auto;">
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1000px;
+        height: 656px; background: #191919; overflow: hidden;  margin: 0px auto;">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -127,7 +127,7 @@
         </div>
 
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 556px; overflow: hidden;">
             <div>
                 <img u="image" src="images/alila/01.jpg" />
                 <img u="thumb" src="images/alila/thumb-01.jpg" />
@@ -208,10 +208,10 @@
             .jssora05r.jssora05rdn { background-position: -310px -40px; }
         </style>
         <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora05l" style="top: 158px; left: 8px;">
+        <span u="arrowleft" class="jssora05l" style="top: 278px; left: 8px;">
         </span>
         <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="top: 158px; right: 8px">
+        <span u="arrowright" class="jssora05r" style="top: 278px; right: 8px">
         </span>
         <!--#endregion Arrow Navigator Skin End -->
         <!--#region Thumbnail Navigator Skin Begin -->
@@ -228,7 +228,7 @@
             .jssort01 {
                 position: absolute;
                 /* size of thumbnail navigator container */
-                width: 800px;
+                width: 1000px;
                 height: 100px;
             }
 
@@ -265,7 +265,7 @@
                     height: 68px;
                     border: #000 2px solid;
                     box-sizing: content-box;
-                    background: url(images/t01.png) -800px -800px no-repeat;
+                    background: url(images/t01.png) -1000px -1000px no-repeat;
                     _background: none;
                 }
 
