@@ -95,11 +95,11 @@ ul.left-menu li a {
 .home-container .img-container img {
 	width: 100%;
 	height: 335px;
-/**	height: 100%; */
+	/**	height: 100%; */
 }
 
 .hover-panel {
-	height: 100%;
+	/**	height: 100%;  */
 	width: 100%;
 	left: 0;
 	margin: 0;
@@ -126,14 +126,12 @@ ul.left-menu li a {
 	opacity: 0.5;
 }
 
-.home-container .img-container:hover> a {
+.home-container .img-container:hover>a {
 	opacity: 1;
 }
 
-.home-section .img-container a {
-	text-align: center;
-	margin-top: 30px;
-	display: inline-block;
+.home-content .img-description {
+	padding-top: 4px;
 }
 
 /*
@@ -150,14 +148,6 @@ ul.left-menu li a {
 	width: 100%; /*slider width*/
 	height: 100%;
 }
-
-/** not used anymore
-.carousel-caption {
-	font-style: italic;
-	text-shadow: 2px 1px #C0C0C0;
-	font-size: 20px;
-}
-*/
 
 .carousel .item img {
 	width: 100%; /*img width*/
@@ -194,27 +184,35 @@ ul.left-menu li a {
 	line-height: 30px;
 	color: #ffffff;
 	text-align: center;
-	background: #AAD6E5;
+/**	background: #AAD6E5; */
 }
 
 .carousel-control.left {
 	left: 15px;
+	background: url(images/a17.png) no-repeat;
+	overflow: hidden;
 }
 
 .carousel-control.right {
 	right: 15px;
 }
 
+a carousel-control left {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url(images/a17.png) no-repeat;
+	overflow: hidden;
+}
+
 /** lessons*/
-#introductionCarousel img{
+#introductionCarousel img {
 	height: 500px;
 }
 
-
-.lesson-img{
+.lesson-img {
 	padding-bottom: 4px;
 }
-
 
 .lesson-img img {
 	width: 100%;
@@ -225,36 +223,41 @@ ul.left-menu li a {
 	font-size: 270px;
 }
 
-.lesson-caption{
-/**	text-align: center; */
+.lesson-caption {
+	/**	text-align: center; */
+	
 }
 
-.lessons .row{
+.lessons .row {
 	margin-top: 15px;
 }
 
-.lessons-controls{
-/**	text-align: center; */
+.lessons-controls {
+	/**	text-align: center; */
+	
 }
 
-.col-right{
-    background-image:linear-gradient(to bottom, rgba(243, 243, 243, 1) 0%, rgba(0, 204, 255, 1) 100%), 
-    linear-gradient(to bottom, rgba(243, 243, 243, 0.6) 0%, rgba(0, 204, 255, 0.6) 100%);
-    background-clip: content-box, padding-box;	
+.col-right {
+	background-image: linear-gradient(to bottom, rgba(243, 243, 243, 1) 0%,
+		rgba(0, 204, 255, 1) 100%),
+		linear-gradient(to bottom, rgba(243, 243, 243, 0.6) 0%,
+		rgba(0, 204, 255, 0.6) 100%);
+	background-clip: content-box, padding-box;
 }
 
-.module-right{
+.module-right {
 	padding-bottom: 4px;
 }
 
-.module-summary{
-	padding : 4px;
+.module-summary {
+	padding: 4px;
 }
 
-div.white{
-	background-color:white; width:100%;height:4px;
+div.white {
+	background-color: white;
+	width: 100%;
+	height: 4px;
 }
-
 
 /** store */
 .nav .nav>li>a {
@@ -270,46 +273,40 @@ div.white{
 	font-weight: bold;
 }
 
-
-
 /** gallery */
-.gallery_container{
+.gallery_container {
 	
 }
 
-.gallery_slider{
+.gallery_slider {
 	heigth: 100%;
 	overflow: hidden;
-	top: 0px;	
+	top: 0px;
 }
 
-.gallery_nav{
-	margin-top : 10px;
+.gallery_nav {
+	margin-top: 10px;
 }
 
-
-.gallery_img img{
-	height:480px;
+.gallery_img img {
+	height: 480px;
 	width: 100%;
 }
 
-.gallery_thumb{
+.gallery_thumb {
 	float: left;
-	margin-left : 5px;
+	margin-left: 5px;
 }
 
-.gallery_thumb img{
+.gallery_thumb img {
 	height: 80px;
-	width: 120px;	
+	width: 120px;
 }
-
 
 /** video*/
-.video-container .row{
+.video-container .row {
 	margin-bottom: 35px;
 }
-
-
 
 .next {
 	float: right;
@@ -318,19 +315,20 @@ div.white{
 
 /** general */
 @font-face {
-    font-family:"AgencyFBRegular";
-    src: url("pacifico/Pacifico.ttf") /* TTF file for CSS3 browsers */
+	font-family: "AgencyFBRegular";
+	src: url("pacifico/Pacifico.ttf") /* TTF file for CSS3 browsers */
 }
-h2, h3 , h4{
-	font-family:"AgencyFBRegular";
+
+h2,h3,h4 {
+	font-family: Copperplate, "AgencyFBRegular";
 }
 
 .col-padding {
 	padding: 4px 4px;
 }
 
-p{
-	text-align:justify;
+p {
+	text-align: justify;
 	font-family: Book Antiqua, Calibri, Geneva, sans-serif;
 	font-size: 13px;
 }
