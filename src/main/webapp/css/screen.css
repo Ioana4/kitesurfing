@@ -1,13 +1,7 @@
 /**
 nav bar
 */
-.navbar-brand {
-	background: url('../images/sigla.png') no-repeat;
-	background-size: 130px 37px;
-	width: 130px;
-	height: 37px;
-	margin-top: 7px;
-}
+
 
 .fa-youtube-square {
 	color: rgb(195, 51, 51);
@@ -324,7 +318,8 @@ div.white {
 }
 
 h2,h3,h4 {
-	font-family: Copperplate, "AgencyFBRegular";
+	font-family: 'Alegreya SC', sans-serif;
+	font-weight: bold;
 }
 
 .col-padding {
