@@ -1,8 +1,6 @@
 /**
 nav bar
 */
-
-
 .fa-youtube-square {
 	color: rgb(195, 51, 51);
 }
@@ -20,6 +18,24 @@ a,a:hover,a:focus,a:active,a.active {
 	{
 	background-color: transparent;
 	color: #000;
+}
+
+.btn-more{
+    color: #fff; 
+    font-size: 12px;
+    /* background-color: #5bc0de; */
+    background: rgba(255,255,255,0.5);
+    border-style: none;
+    border-color: #565a5c;
+    border-bottom-color: #383b3c;
+}
+
+.btn-more:hover{
+	color: #fbba1f;
+	background-color: rgba(0,0,0,0.35);
+	border-color: #676c6e;
+    border-bottom-color: #444749;
+    font-size: 12px;
 }
 
 /**home*/

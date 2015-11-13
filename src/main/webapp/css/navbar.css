@@ -61,3 +61,13 @@
 		padding-bottom: 20px;
 	}
 }
+
+.navbar .navbar-nav {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
