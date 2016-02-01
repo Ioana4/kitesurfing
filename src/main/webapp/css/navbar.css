@@ -48,12 +48,14 @@
     background-color: #ffffff;
 }
 
+
 .navbar-brand {
-	background: url('../images/sigla2.jpg') no-repeat;
+/**	background: url('../images/sigla2.jpg') no-repeat; */
 	background-size: 130px 60px;
 	width: 100px;
 	height: 60px;
 }
+
 
 @media (min-width: 768px){
 	.navbar-nav>li>a{

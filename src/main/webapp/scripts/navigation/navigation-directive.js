@@ -1,41 +1,34 @@
-angular.module('app')
-    .directive('navigation', function () {
-       return {
-           restrict: 'E',
-           replace: false,
-           templateUrl: 'views/navigation/navigation-directive.html',
-           controller: function ($scope) {
+angular.module('app').service('menuService', function($resource) {
+	return {
+		menu : $resource('/navigation/menu'),
+		brand : $resource('/navigation/brand')
 
-               $scope.menu = [
-                   {label: 'HOME', link: '#home'},
-                   {label: 'ABOUT', link: '#about'},
-                   {label: 'LESSONS'
-                	   , submenu: [
-                	       {label: 'FREE TASTE', link: '#freeTaste'} ,
-                	       {label: 'INTRODUCTION', link: '#lessons'},
-                	       {label: 'MODULE1', link: '#module1'}, 
-                	       {label: 'MODULE2', link: '#module2'}, 
-                	       {label: 'MODULE3', link: '#module3'},
-                	       {label: 'NEXT LEVEL', link: '#nextLevel'}, 
-                	       {label: 'FAQ', link: '#module4'}
-                	   ]
-                   },
-                   {label: 'GALLERY', link: '#gallery'},
-                   {label: 'VIDEO', link: '#video'},
-                   {label: 'STORE', link: '#store'},
-                   {label: 'TRAVEL', link: '#travel'},
-                   {label: 'CONTACT', link: '#contact'}
-               ];
+	};
+});
 
-               $scope.activeElement = $scope.menu[0];
+angular.module('app').directive('navigation', function() {
+	return {
+		restrict : 'E',
+		replace : false,
+		templateUrl : 'views/navigation/navigation-directive.html',
+		controller : function($scope, menuService) {
+			// get menus
+			$scope.menu = menuService.menu.query();
+			// get brand image
+//			$scope.brand = menuService.brand.get().$promise.then(function (response){
+//				$scope.brandStyle = "background: url('" + response.url + "') no-repeat; background-size: 130px 60px; width:100px; height:60px"; //
+//				$scope.brandImage = response;
+//			});
+			
+			$scope.activeElement = $scope.menu[0];
 
-               $scope.setActive = function(element){
-                   $scope.activeElement = element;
-               };
+			$scope.setActive = function(element) {
+				$scope.activeElement = element;
+			};
 
-               $scope.getActive = function (element){
-                 return element == $scope.activeElement ? 'active': '';
-               }
-           }
-       }
-    });
+			$scope.getActive = function(element) {
+				return element == $scope.activeElement ? 'active' : '';
+			};	
+		}
+	};
+});
