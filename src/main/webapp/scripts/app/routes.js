@@ -9,7 +9,13 @@ angular.module('app').config([ '$routeProvider', function($routeProvider) {
 	}).when('/store', {
 		templateUrl : 'views/store/store.html'
 	}).when('/gallery', {
-		templateUrl : 'views/gallery/gallery.html'
+		templateUrl : 'views/gallery/gallery.html',
+		controller :  'GalleryController',
+		resolve : {
+			gallery : function(galleryService) {
+				return galleryService.findAll.query().$promise;
+			}
+		}
 	}).when('/video', {
 		templateUrl : 'views/gallery/video.html'
 	}).when('/travel', {
@@ -30,7 +36,7 @@ angular.module('app').config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'admin/views/gallery/gallery.html',
 		controller :  'AdminGalleryController',
 		resolve : {
-			gallery : function(galleryService, $resource) {
+			gallery : function(galleryService) {
 				return galleryService.findAll.query().$promise;
 			}
 		}

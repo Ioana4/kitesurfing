@@ -1,4 +1,4 @@
-<div class = container" ng-controller="GalleryController">
+<div class = container">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) instead for release -->
@@ -8,8 +8,6 @@
     <script>
 
         jQuery(document).ready(function ($) {
-        	alert('slider ready');
-        	
             var _SlideshowTransitions = [
             //Fade in L
                 {$Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
@@ -130,8 +128,8 @@
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 900px; height: 556px; overflow: hidden;">
         	<div ng-repeat="item in gallery">
-        		<img u="image" data-src="{{loadById(item)}}" src="{{loadById(item)}}">
-        		<img u="thumb" data-src="{{loadById(item)}}" src="{{loadById(item)}}"> 
+        		<img u="image" ng-src="{{loadById(item)}}">
+        		<img u="thumb" ng-src="{{loadById(item)}}"> 
         	</div>
         
         </div>
