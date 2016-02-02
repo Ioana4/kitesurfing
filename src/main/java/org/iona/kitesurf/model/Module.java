@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table
@@ -19,9 +20,9 @@ public class Module {
 	private Long id;
 
 	private String title;
-
+ 
 	@OneToMany
-	@JoinColumn(name="id")
+	@JoinColumn(name ="id")
 	private List<Chapter> chapters;
 
 	public Long getId() {

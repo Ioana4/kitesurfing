@@ -40,5 +40,7 @@ angular.module('app').config([ '$routeProvider', function($routeProvider) {
 				return galleryService.findAll.query().$promise;
 			}
 		}
+	}).when('/admin/lessons', {
+		templateUrl : 'admin/views/lessons/lessons.html'
 	});
 } ]);

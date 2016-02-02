@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 
 @Entity
@@ -18,8 +19,10 @@ public class Content {
 	
 	private String description;
 	
+	@Transient
 	private List<String> list;
 	
+	@Transient
 	private List<ImageFile> photo;
 
 	public Long getId() {

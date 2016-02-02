@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table
@@ -19,17 +20,15 @@ public class Chapter {
 	private Long id;
 
 	private String title;
-
-	@OneToMany
-	@JoinColumn(name="id")
+	
+	@Transient
 	private List<ImageFile> photos;
 
-	@OneToMany
-	@JoinColumn(name = "id")
+	@Transient
 	private List<Content> content;
 
-	@OneToMany
-	@JoinColumn(name = "id")
+
+	@Transient
 	private List<Chapter> subchapters;
 
 	public Long getId() {
