@@ -15,7 +15,7 @@ public class GalleryService {
 	@Autowired
 	private GalleryRepository galleryRepository;
 
-	public void add(Integer order, byte[] imageContent) {
+	public void save(Integer order, byte[] imageContent) {
 		ImageFile imageFile = new ImageFile();
 		imageFile.setContent(imageContent);
 
@@ -33,5 +33,9 @@ public class GalleryService {
 
 	public Gallery getOne(Long id) {
 		return galleryRepository.findOne(id);
+	}
+
+	public void delete(Long id) {
+		galleryRepository.delete(id);		
 	}
 }

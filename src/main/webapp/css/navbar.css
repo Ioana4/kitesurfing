@@ -50,7 +50,7 @@
 
 
 .navbar-brand {
-/**	background: url('../images/sigla2.jpg') no-repeat; */
+	background: url('../navigation/brand') no-repeat; 
 	background-size: 130px 60px;
 	width: 100px;
 	height: 60px;

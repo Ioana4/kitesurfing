@@ -15,10 +15,10 @@ angular.module('app').directive('navigation', function() {
 			// get menus
 			$scope.menu = menuService.menu.query();
 			// get brand image
-//			$scope.brand = menuService.brand.get().$promise.then(function (response){
-//				$scope.brandStyle = "background: url('" + response.url + "') no-repeat; background-size: 130px 60px; width:100px; height:60px"; //
-//				$scope.brandImage = response;
-//			});
+			$scope.brand = menuService.brand.get().$promise.then(function (response){
+				$scope.brandStyle = "background: url('" + response.url + "') no-repeat; background-size: 130px 60px; width:100px; height:60px"; //
+				$scope.brandImage = response;
+			});
 			
 			$scope.activeElement = $scope.menu[0];
 

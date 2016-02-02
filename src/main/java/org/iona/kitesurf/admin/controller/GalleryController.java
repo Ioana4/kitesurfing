@@ -27,10 +27,10 @@ public class GalleryController {
 	private GalleryService galleryService;
 
 	@RequestMapping(value = "/gallery", method = RequestMethod.POST)
-	public ModelAndView add(@RequestParam MultipartFile file, @RequestParam("order") Integer order) {
+	public ModelAndView save(@RequestParam MultipartFile file, @RequestParam("order") Integer order) {
 		if (!file.isEmpty()) {
 			try {
-				galleryService.add(order, file.getBytes());
+				galleryService.save(order, file.getBytes());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -44,7 +44,7 @@ public class GalleryController {
 		return gallery;
 	}
 
-	@RequestMapping(value = "/gallery/{id}")
+	@RequestMapping(value = "/gallery/{id}", method = RequestMethod.GET)
 	public HttpEntity<InputStreamResource> findById(@PathVariable("id") Long id) {
 		Gallery gallery = galleryService.getOne(id);  
 		InputStreamResource inputStreamResource = new InputStreamResource(new ByteArrayInputStream(gallery.getImage().getContent()));
@@ -56,5 +56,11 @@ public class GalleryController {
 
 		return new HttpEntity<InputStreamResource>(inputStreamResource, headers);
 	}
-
+	
+	
+	@RequestMapping(value="/gallery/delete", method=RequestMethod.POST)
+	public ModelAndView delete(@RequestParam("imageId") Long id){
+		galleryService.delete(id);
+		return new ModelAndView("redirect:/#/admin/gallery");
+	}
 }
