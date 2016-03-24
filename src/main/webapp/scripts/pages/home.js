@@ -1,17 +1,19 @@
 angular.module('app').service('homeService', function($resource) {
 	return {
-		carousel : $resource('/home/carousel'),
+		carouselResource : $resource('/home/carousel'),
 		save : $resource('')
 	};
 });
 
 
-angular.module('app').controller("HomeController", function($scope, homeService){
+angular.module('app').controller("HomeController", function($scope, carousel){
 	//load carousel photos
-	$scope.carousel = homeService.carousel.query();
+	$scope.carousel = carousel;
 	
 	//display carousel image
 	$scope.carouselImage = function(item){
 		return '/home/carousel/content/' + item.id;
 	};
 });
+
+

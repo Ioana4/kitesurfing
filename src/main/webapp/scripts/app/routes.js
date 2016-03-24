@@ -1,7 +1,13 @@
 angular.module('app').config([ '$routeProvider', function($routeProvider) {
 	$routeProvider
 	.when('/home', {
-		templateUrl : 'views/home/home.html'
+		templateUrl : 'views/home/home.html',
+		controller: 'HomeController',
+		resolve:{
+			carousel : function(homeService){
+				return homeService.carouselResource.query().$promise;
+			}
+		}
 	}).when('/about', {
 		templateUrl : 'views/about/about.html'
 	}).when('/lessons', {

@@ -31,6 +31,9 @@ public class AdminHomeController {
 
 		ModelAndView modelAndView = new ModelAndView("redirect:/#/admin/home?testParam=test");
 		modelAndView.getModelMap().addAttribute("messageResponse", "Carousel item a fost salvat cu success");
+		
+		
+		
 		return modelAndView;
 	}
 	
@@ -43,5 +46,4 @@ public class AdminHomeController {
 		return modelAndView;
 		
 	}
-
 }

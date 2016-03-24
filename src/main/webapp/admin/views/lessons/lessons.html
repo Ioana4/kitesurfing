@@ -5,17 +5,16 @@
 	
 	<div>
 		<form name="lessons" ng-submit="save()">
-	     	
 			<div>
 				<div class="table-responsive">
 					<table class="table">
 						<tr>
 							<td>Module title</td>
-							<td><input type="text" ng-model="title"></td>
+							<td><input type="text" ng-model="module.title"></td>
 						</tr>
 						<tr>
 							<td>Description</td>
-							<td><textarea rows="10" cols="80"  ng-model="description"></textarea></td>
+							<td><textarea rows="10" cols="80"  ng-model="module.description"></textarea></td>
 						</tr>
 						<tr>	
 							<td>Chapters<td>

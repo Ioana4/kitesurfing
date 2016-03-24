@@ -12,12 +12,7 @@ angular.module('app').controller("LessonsController", function($scope, lessonsSe
 	
 	$scope.chapters =[];
 	$scope.save = function() {
-		var moduleToSave = {
-				'title' : "test",
-				'description': "descr"
-		};
-		
-		lessonsService.module.post(moduleToSave);
+		lessonsService.module.post($scope.module);
 	};
 	
 	$scope.addChapter = function(){

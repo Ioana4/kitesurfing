@@ -1,23 +1,16 @@
-<div ng-controller="HomeController">
+<div>
 <div class="row carousel-container">
 	<div class="col-xs-12 full-height">
 		<div id="menuCarousel" class="carousel slide full-height"
 			data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#menuCarousel" data-slide-to="0" class="activeß"></li>
-				<li data-target="#menuCarousel" data-slide-to="1" class=""></li>
-				<li data-target="#menuCarousel" data-slide-to="2" class=""></li>
-				<li data-target="#menuCarousel" data-slide-to="3" class=""></li>
-				<li data-target="#menuCarousel" data-slide-to="4" class=""></li>
-			</ol>
+			
 			<div class="carousel-inner full-height">
 				<div class="item full-height" ng-repeat="item in carousel" ng-class="{active : $first}">
 					<img data-src="{{carouselImage(item)}}" src="{{carouselImage(item)}}">
 					<div class="container">
 						<div class="carousel-caption">
-							<h4>{{item.caption}}</h4>
 							<div>
-								<a class="btn btn-more btn-md" href="{{item.targetUrl}}" role="button">More</a>
+								<a class="btn btn-more btn-md" href="{{item.targetUrl}}" role="button"><h4>{{item.caption}}</h4></a>
 							</div>
 						</div>
 					</div>
@@ -25,6 +18,14 @@
 			</div>
 			<a class="carousel-control left" href="/#menuCarousel" data-slide="prev"></a>
 			<a class="carousel-control right" href="/#menuCarousel" data-slide="next"></a>
+			
+			<ol class="carousel-indicators">
+				<li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#menuCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#menuCarousel" data-slide-to="2" class=""></li>
+				<li data-target="#menuCarousel" data-slide-to="3" class=""></li>
+				<li data-target="#menuCarousel" data-slide-to="4" class=""></li>
+			</ol>
 			
 		</div>
 	</div>
@@ -131,6 +132,6 @@
 
 <script type="text/javascript">
 	$('.carousel').carousel({
-		interval : 5000
+		interval : 150000
 	})
 </script>
