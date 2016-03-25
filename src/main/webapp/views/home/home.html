@@ -1,8 +1,7 @@
 <div>
 <div class="row carousel-container">
 	<div class="col-xs-12 full-height">
-		<div id="menuCarousel" class="carousel slide full-height"
-			data-ride="carousel">
+		<div id="menuCarousel" class="carousel slide full-height" data-ride="carousel">
 			
 			<div class="carousel-inner full-height">
 				<div class="item full-height" ng-repeat="item in carousel" ng-class="{active : $first}">
@@ -16,8 +15,8 @@
 					</div>
 				</div>
 			</div>
-			<a class="carousel-control left" href="/#menuCarousel" data-slide="prev"></a>
-			<a class="carousel-control right" href="/#menuCarousel" data-slide="next"></a>
+			<a class="carousel-control left" href="#home" data-slide="prev"></a>
+			<a class="carousel-control right" href="#home" data-slide="next"></a>
 			
 			<ol class="carousel-indicators">
 				<li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
@@ -125,13 +124,16 @@
 
 </div>
 
-<div class="nav navbar-default footer">
-	<p class="navbar-text">Din Kiteboarding@2015</p>
-</div>
-
-
 <script type="text/javascript">
 	$('.carousel').carousel({
 		interval : 150000
 	})
+
+	$('.carousel-control.left').click(function() {		
+	  $('#menuCarousel').carousel('prev');
+	});
+	
+	$('.carousel-control.right').click(function() {
+	  $('#menuCarousel').carousel('next');
+	});
 </script>
