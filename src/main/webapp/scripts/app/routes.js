@@ -36,7 +36,10 @@ angular.module('app').config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'views/lessons/module3.html'
 	}).when('/module4', {
 		templateUrl : 'views/lessons/module4.html'
-	}).when('/admin/home', {
+	}).when('/travel1', {
+		templateUrl : 'views/travel/travel.html'
+	}).
+	when('/admin/home', {
 		templateUrl : 'admin/views/home/home.html'
 	}).when('/admin/gallery', {
 		templateUrl : 'admin/views/gallery/gallery.html',

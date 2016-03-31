@@ -148,7 +148,7 @@ ul.left-menu li a {
 }
 
 .carousel-container {
-	height: 75%;
+	height: 78%;
 }
 
 .carousel .item {
@@ -309,7 +309,7 @@ div.white {
 }
 
 .gallery_nav {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .gallery_img img {
@@ -335,6 +335,27 @@ div.white {
 .next {
 	float: right;
 	text-align: right;
+}
+
+
+.travel-main{
+	max-height:530px;
+	overflow: hidden;
+}
+
+
+/** travel */
+.travel-container{
+	margin-top:16px;
+}
+
+.travel-main img{
+	width : 100%;
+	height: auto;
+}
+
+.travel-content img{
+	width: 100%;
 }
 
 /** general */
