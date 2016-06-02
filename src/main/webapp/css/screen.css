@@ -70,7 +70,7 @@ ul.left-menu li a {
 .home-container {
 	width: 100%;
 	position: relative;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .home-container .caption {
@@ -342,6 +342,9 @@ div.white {
 .travel-main{
 	max-height:530px;
 	overflow: hidden;
+	
+	    /* overflow-y: hidden;  height: 530px; removed overflow*/
+   
 }
 
 .travel-container{
@@ -351,6 +354,9 @@ div.white {
 .travel-main img{
 	width : 100%;
 	height: auto;
+	
+	/* pt overflow pe width    width: auto;
+    height: 100%; */
 }
 
 .travel-content img{

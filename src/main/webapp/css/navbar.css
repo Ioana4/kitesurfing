@@ -8,7 +8,7 @@
     margin-right:15px;
 }
 .navbar-default {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
 	background: url("../images/nav-background.jpg") repeat-x;
 	background-size: contain;   
@@ -83,4 +83,8 @@
 
 .fa-youtube-square{
     color: rgb(222, 41, 41);
+}
+
+.fa-facebook-square {
+	color: #4B8EFC;
 }
