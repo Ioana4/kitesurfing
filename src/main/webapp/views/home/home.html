@@ -1,18 +1,17 @@
 
-<div class="row carousel-container">
-	<div class="col-xs-12 full-height">
+<div class="carousel-container">
+	<div class="full-height">
 		<div id="menuCarousel" class="carousel slide full-height" data-ride="carousel">
-			
 			<div class="carousel-inner full-height">
 				<div class="item full-height" ng-repeat="item in carousel" ng-class="{active : $first}">
 					<img data-src="{{carouselImage(item)}}" src="{{carouselImage(item)}}">
-					<div class="container">
+					
 						<div class="carousel-caption">
 							<div>
 								<a class="btn btn-more btn-md" href="{{item.targetUrl}}" role="button"><h4>{{item.caption}}</h4></a>
 							</div>
 						</div>
-					</div>
+					
 				</div>
 			</div>
 			<a class="carousel-control left" href="#home" data-slide="prev"></a>
