@@ -1,9 +1,8 @@
 
 <div class="carousel-container">
-	<div class="full-height">
-		<div id="menuCarousel" class="carousel slide full-height" data-ride="carousel">
-			<div class="carousel-inner full-height">
-				<div class="item full-height" ng-repeat="item in carousel" ng-class="{active : $first}">
+		<div id="menuCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="item max-height" ng-repeat="item in carousel" ng-class="{active : $first}">
 					<img data-src="{{carouselImage(item)}}" src="{{carouselImage(item)}}">
 					
 						<div class="carousel-caption">
@@ -25,7 +24,6 @@
 				<li data-target="#menuCarousel" data-slide-to="4" class=""></li>
 			</ol>
 			
-		</div>
 	</div>
 
 
