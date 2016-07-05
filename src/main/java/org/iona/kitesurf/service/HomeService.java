@@ -1,6 +1,7 @@
 package org.iona.kitesurf.service;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.iona.kitesurf.model.Carousel;
 import org.iona.kitesurf.model.ImageFile;
@@ -41,7 +42,16 @@ public class HomeService {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public List<Carousel> getCarouselImages(){
+		return  carouselRepository.findAll();
 
+	}
+
+	public void deleteCarouselImage(Long id) {
+		carouselRepository.delete(id);
+		
 	}
 
 }

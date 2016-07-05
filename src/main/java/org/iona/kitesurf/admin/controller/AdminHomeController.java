@@ -1,9 +1,15 @@
 package org.iona.kitesurf.admin.controller;
 
+import java.util.List;
+
+import javax.websocket.server.PathParam;
+
+import org.iona.kitesurf.model.Carousel;
 import org.iona.kitesurf.service.HomeService;
 import org.iona.kitesurf.service.NavigationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,7 +35,7 @@ public class AdminHomeController {
 			homeService.saveCarousel(caption, menuId, file);
 		}
 
-		ModelAndView modelAndView = new ModelAndView("redirect:/#/admin/home?testParam=test");
+		ModelAndView modelAndView = new ModelAndView("redirect:/#/admin/home");
 		modelAndView.getModelMap().addAttribute("messageResponse", "Carousel item a fost salvat cu success");
 		
 		
@@ -42,8 +48,19 @@ public class AdminHomeController {
 		
 		navigationService.updateBrand(file); 
 		
-		ModelAndView modelAndView = new ModelAndView("redirect:/#/admin/home?testParam=test");
+		ModelAndView modelAndView = new ModelAndView("redirect:/#/admin/home");
 		return modelAndView;
 		
+	}
+	
+	@RequestMapping(value = "/carousel", method = RequestMethod.GET)
+	public @ResponseBody List<Carousel> getCarouselImages(){
+		List<Carousel> carousel = homeService.getCarouselImages();
+		return carousel;
+	}
+	
+	@RequestMapping(value = "/carousel/{id}", method = RequestMethod.DELETE)
+	public @ResponseBody void deleteCarouselImages(@PathVariable("id") Long id){
+		homeService.deleteCarouselImage(id);
 	}
 }

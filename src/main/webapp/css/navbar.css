@@ -82,9 +82,13 @@
 }
 
 .fa-youtube-square{
-    color: rgb(222, 41, 41);
+    color: #D40A15;
+}
+
+.fa-vimeo-square {
+	color: #20ACEF;
 }
 
 .fa-facebook-square {
-	color: #4B8EFC;
+ color: #4B8EFC;
 }

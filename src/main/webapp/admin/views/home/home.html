@@ -48,6 +48,24 @@
 					<td><input type="submit" value="Save" class="btn"></td>
 				</tr>
 			</table>
+			
+			
+			<table class="table">
+				<tr>
+					<td>Caption</td>
+					<td>Menu</td>
+					<td>Picture</td>
+					<td>Actions</td>
+				</tr>
+				
+				<tr ng-repeat="item in carousel">
+					<td>{{item.caption}}</td>
+					<td>{{item.menu}}</td>
+					<td><img data-src="{{carouselImage(item)}}" src="{{carouselImage(item)}}" style="height:200px; width:auto"></td>
+					<td><button ng-click="deleteImage(item.id)">Delete</button></td>
+				</tr>
+				
+			</table>
 		</div>
 	</div>
 </form>
