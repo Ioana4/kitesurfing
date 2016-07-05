@@ -98,8 +98,7 @@ ul.left-menu li a {
 }
 
 .home-container .item img {
-	width: 100%;
-	height: 100%; 
+	width: 100%; 
 }
 
 .hover-panel {
@@ -163,16 +162,38 @@ full-height{
 	
 }
 
-.carousel .item {
-	max-height: 530px;
+@media screen and (max-height : 999px)
+{
+	.carousel .item {
+		max-height: 530px;
+	}
+	
+	.carousel .item img {
+	    width:100%;
+		max-width:100%;
+		height: auto;
+		max-height: 530px;
+	}
+	
 }
 
-.carousel .item img {
-    width:100%;
-	max-width:100%;
-	height: auto;
-	max-height: 530px;
+@media screen and (min-height : 1000px)
+{
+	.carousel .item {
+		max-height: 789px;
+	}
+	
+	.carousel .item img {
+	    width:100%;
+		max-width:100%;
+		height: auto;
+		max-height: 789px;
+	}
+	
 }
+
+
+
 
 
 
