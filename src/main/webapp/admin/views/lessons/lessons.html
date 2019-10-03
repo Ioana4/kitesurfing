@@ -1,0 +1,45 @@
+<div ng-controller="LessonsController">
+	<div class="col-padding">
+		<h4>Lessons administration</h4>
+	</div>
+	
+	<div>
+		<form name="lessons" ng-submit="save()">
+			<div>
+				<div class="table-responsive">
+					<table class="table">
+						<tr>
+							<td>Module title</td>
+							<td><input type="text" ng-model="module.title"></td>
+						</tr>
+						<tr>
+							<td>Description</td>
+							<td><textarea rows="10" cols="80"  ng-model="module.description"></textarea></td>
+						</tr>
+						<tr>	
+							<td>Chapters<td>
+						</tr>
+						<tr ng-repeat="chapter in chapters">
+							<td>{{chapter.title}}</td>
+							<td><button ng-click="deleteChapter(chapter.title)">Delete</button></td>
+						</tr>
+						
+						<tr>
+							<td>Chapter title</td>
+							<td><input ng-model="chapter.title"></td>
+						</tr>
+						<tr>	
+							<td></td>
+							<td><button ng-click="addChapter()">Add chapter</button></td>
+						</tr>
+						
+						<tr>
+							<td></td>
+							<td><input type="submit" value="Save" class="btn"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

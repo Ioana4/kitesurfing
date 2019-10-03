@@ -1,0 +1,71 @@
+<div class="col-padding">
+	<h4>Brand</h4>
+</div>
+<form method="POST" enctype="multipart/form-data" action="/admin/brand">
+	<div class="table-responsive">
+		<table class="table">
+			<tr>
+				<td>Brand image</td>
+				<td><input type="file" name="file"><br /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Save" class="btn"></td>
+			</tr>
+		</table>
+	</div>
+</form>
+
+<div class="col-padding">
+	<h4>Carousel administration</h4>
+</div>
+<form method="POST" enctype="multipart/form-data" action="/admin/carousel">
+	<div>
+		<div class="table-responsive">
+			<table class="table">
+				<tr>
+					<td>Caption</td>
+					<td><input name="caption" type="text" /></td>
+				</tr>
+				<tr>
+					<td>Menu</td>
+					<td><select name="menuId">
+							<option value="1" selected>About</option>
+							<option value="2">Lessons</option>
+							<option value="3">Gallery</option>
+							<option value="4">Video</option>
+							<option value="5">Store</option>
+							<option value="6">Travel</option>
+
+					</select></td>
+				</tr>
+				<tr>
+					<td>File upload</td>
+					<td><input type="file" name="file"><br /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Save" class="btn"></td>
+				</tr>
+			</table>
+			
+			
+			<table class="table">
+				<tr>
+					<td>Caption</td>
+					<td>Menu</td>
+					<td>Picture</td>
+					<td>Actions</td>
+				</tr>
+				
+				<tr ng-repeat="item in carousel">
+					<td>{{item.caption}}</td>
+					<td>{{item.menu}}</td>
+					<td><img data-src="{{carouselImage(item)}}" src="{{carouselImage(item)}}" style="height:200px; width:auto"></td>
+					<td><button ng-click="deleteImage(item.id)">Delete</button></td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,57 @@
+<div>
+	<div class="col-padding">
+		<h4>Gallery administration</h4>
+	</div>
+
+
+	<form method="POST" enctype="multipart/form-data" action="/admin/gallery">
+		<div>
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<td>Add image</td>
+						<td><input type="file" name="file"><br /></td>
+					</tr>
+					<tr>
+						<td>Display order</td>
+						<td><input type="text" name="order"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Upload" class="btn"></td>
+					</tr>
+					<tr>
+						<td colspan="2">{{messageResponse}}</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</form>
+
+	<form method="POST" action="/admin/gallery/delete">
+		<div>
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<td>Delete image</td>
+						<td>
+							<select ng-model="selected.imageId" name="imageId">
+								<option ng-repeat="image in gallery" value="{{image.id}}">{{image.displayOrder}}</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Image</td>
+						<td><img ng-src="{{loadById(selected.imageId)}}"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Delete" class="btn"></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</form>
+</div>

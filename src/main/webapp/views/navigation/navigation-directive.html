@@ -1,33 +1,49 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Din Kiteboarding</a>
+<div class="container">
+	<div id="custom-bootstrap-menu"
+		class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#home"></a>  
+				
+				<div type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navmenu">
+					<span class="sr-only">Toggle Navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</div>
+				
+			</div>
+			<div class="navbar-collapse collapse navmenu">
+				<ul class="nav navbar-nav navbar-left">
+					<li ng-repeat="item in menu" ng-class="getActive(item)" class="dropdown">
+						<a href="{{item.link}}"  data-toggle="dropdown" ng-click="setActive(item)" 
+							ng-class="{'dropdown-toggle':item.submenu}">{{item.label}}
+							<span ng-if="item.submenu" class="caret" ></span>
+						</a>
+						
+						
+						<ul class="dropdown-menu" role="menu" ng-if="item.submenu"> 
+							<li ng-repeat="submenu in item.submenu">
+								<a href="{{submenu.link}}">{{submenu.label}}</a></li>
+						</ul>
+					</li>
+				</ul>
 
-            <div type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navmenu">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-        </div>
-        <div class="navbar-collapse collapse navmenu">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#">Home</a></li>
-                <li><a href="#lessons">Lessons</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#trips">Trips</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            
-            <div class="navbar-text pull-right">
-            	<a href="http://www.facebook.com/dean.kitesurfing?fref=ts" target="_blank">
-            		<i class="fa fa-facebook-square fa-2x"></i>
-            	</a>
-            	<a href="http://www.youtube.com/watch?v=3a9Oqhli_gI" target="_blank">
-            		<i class="fa fa-youtube-square fa-2x"></i>
-            	</a>
-            </div> 
-        </div>
-    </div>
+				<div class="navbar-text pull-right">
+					<a href="http://www.facebook.com/dean.kitesurfing?fref=ts"
+						target="_blank"> <i class="fa fa-vimeo-square fa-2x"></i>
+					</a>
+					 
+					<a href="http://www.youtube.com/watch?v=3a9Oqhli_gI"
+						target="_blank"> <i class="fa fa-youtube-square fa-2x"></i>
+					</a>
+					
+					<a href="http://www.facebook.com/dean.kitesurfing?fref=ts"
+						target="_blank"> <i class="fa fa-facebook-square fa-2x"></i>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
